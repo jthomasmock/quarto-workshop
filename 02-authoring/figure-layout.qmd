@@ -75,7 +75,3 @@ Two states of Howard
 Two states of Howard
 
 :::
-
-## Subfigures
-
-<iframe src="sub-figure.html" height="800px" width="1200px"></iframe>

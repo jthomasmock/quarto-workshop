@@ -300,13 +300,3 @@ penguins %>%
   select(species, bill_length_mm, body_mass_g) %>% 
   reactable(defaultPageSize = 5)
 ```
-
-```{r}
-penguins %>% 
-  select(1:4) %>% 
-  DT::datatable()
-```
-
-```{r}
-plotly::ggplotly(penguin_plot)
-```
