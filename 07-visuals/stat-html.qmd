@@ -15,7 +15,7 @@ library(survival)
 
 # NOTE
 
-This RMarkdown is the built-in example from the `gtsummary` R package. You can get the same file by running the code below:
+This Quarto doc is the built-in example from the `gtsummary` R package. You can get the same file by running the code below:
 
 ```{r, eval = FALSE}
 library(gtsummary)

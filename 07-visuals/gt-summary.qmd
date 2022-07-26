@@ -7,9 +7,9 @@ format: html
 
 ## Introduction
 
-**Reproducible reports** are an important part of good practices.  We often need to report the **results from a table** in the text of an R markdown report.
+**Reproducible reports** are an important part of good practices.  We often need to report the **results from a table** in the text of an Quarto report.
 **Inline reporting** has been made simple with [`inline_text()`](http://www.danieldsjoberg.com/gtsummary/reference/inline_text.tbl_summary.html).
-The `inline_text()` function reports statistics from {gtsummary} tables inline in an [R markdown](https://rmarkdown.rstudio.com/lesson-1.html) report.
+The `inline_text()` function reports statistics from {gtsummary} tables inline in an Quarto report.
 
 ## Setup
 

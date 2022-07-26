@@ -1,11 +1,10 @@
 ---
 output: html
-execute: 
-  eval: true
 ---
 
 ```{r}
 library(ggplot2)
+library(dplyr)
 ```
 
 
@@ -18,11 +17,11 @@ library(ggplot2)
 #|   - "Speed and Stopping Distances of Cars"
 #|   - "Engine displacement and fuel efficiency in Cars"
 
-cars |> 
+cars %>% 
   ggplot(aes(x = speed, y = dist)) +
   geom_point()
 
-mtcars |> 
+mtcars %>% 
   ggplot(aes(x = disp, y = mpg)) +
   geom_point()
 ```
@@ -39,11 +38,11 @@ mtcars |>
 #|   - "mtcars"
 #| layout-ncol: 2
 
-cars |> 
+cars %>% 
   ggplot(aes(x = speed, y = dist)) +
   geom_point()
 
-mtcars |> 
+mtcars %>% 
   ggplot(aes(x = disp, y = mpg)) +
   geom_point()
 ```
@@ -52,18 +51,34 @@ mtcars |>
 
 ```{r}
 #| echo: fenced
-#| layout: [[45,-10, 45], [100]]
+#| layout: [[45,-10, 45], [50, 50]]
+#| fig-height: 5
+#| fig-align: center
+#| message: false
+#| warning: false
+#| dpi: 300
 
-cars |> 
+cars %>% 
   ggplot(aes(x = speed, y = dist)) +
-  geom_point()
+  geom_smooth() +
+  theme(text = element_text(size = 20))
 
-mtcars |> 
+cars %>% 
+  ggplot(aes(x = speed, y = dist)) +
+  geom_point()+
+  theme(text = element_text(size = 20))
+
+mtcars %>% 
   ggplot(aes(x = disp, y = mpg)) +
-  geom_point()
+  geom_point()+
+  theme(text = element_text(size = 20))
 
-mtcars |> 
+mtcars %>% 
   ggplot(aes(x = cyl, y = mpg, group = cyl, color = factor(cyl))) +
   geom_boxplot() +
-  geom_jitter()
+  geom_jitter() +
+  theme(legend.position = "none")+
+  theme(text = element_text(size = 20))
+
 ```
+

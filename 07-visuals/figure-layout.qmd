@@ -2,15 +2,19 @@
 format: html
 ---
 
+```{r}
+library(ggplot2)
+```
+
 ## Figures
 
 Basic markdown syntax:
 
 ```
-![Boston Terrier](images/boston-terrier.png)
+![Boston Terrier](boston-terrier.png)
 ```
 
-![Boston Terrier](images/boston-terrier.png)
+![Boston Terrier](boston-terrier.png)
 
 ## Fragments
 
@@ -19,18 +23,18 @@ Basic markdown syntax:
 ::: {.column width="50%"}
 
 ```
-![Boston terrier](images/boston-terrier.png){fig-align="left"}
+![Boston terrier](boston-terrier.png){fig-align="left"}
 ```
-![](images/boston-terrier.png)
+![](boston-terrier.png)
 :::
 
 ::: {.column width="50%"}
 
 ```
-![](images/boston-terrier.png){fig-align="right" fig-alt="A photo a Boston Terrier."}
+![](boston-terrier.png){fig-align="right" fig-alt="A photo a Boston Terrier."}
 ```
 
-![](images/boston-terrier.png){fig-align="right" fig-alt="A photo a Boston Terrier."}
+![](boston-terrier.png){fig-align="right" fig-alt="A photo a Boston Terrier."}
 
 :::
 
@@ -41,9 +45,9 @@ Basic markdown syntax:
 ```
 ::: {#fig-bostons layout-ncol=2}
 
-![Excited](images/boston-terrier.png){#fig-boston width="250px"}
+![Excited](boston-terrier.png){#fig-boston width="250px"}
 
-![Sleeping](images/boston-sleep.png){#fig-sleep width="250px"}
+![Sleeping](boston-sleep.png){#fig-sleep width="250px"}
 
 Two states of Howard
 
@@ -54,9 +58,9 @@ Two states of Howard
 
 ::: {#fig-bostons layout-ncol=2}
 
-![Excited](images/boston-terrier.png){#fig-boston width="250px"}
+![Excited](boston-terrier.png){#fig-boston width="250px"}
 
-![Sleeping](images/boston-sleep.png){#fig-sleep width="250px"}
+![Sleeping](boston-sleep.png){#fig-sleep width="250px"}
 
 Two states of Howard
 
@@ -65,3 +69,26 @@ Two states of Howard
 ## Subfigures
 
 <iframe src="sub-figure.html" height="800px" width="1200px"></iframe>
+
+## Custom grid
+
+::: {.grid}
+
+::: {.g-col-6}
+This column takes 1/2 of the page
+```{r}
+ggplot(mtcars, aes(x = cyl, y = disp)) +
+  geom_boxplot()
+```
+:::
+
+
+::: {.g-col-6}
+This column takes 1/2 of the page
+```{r}
+head(mtcars, 5)[1:4] |> knitr::kable()
+```
+
+:::
+
+:::

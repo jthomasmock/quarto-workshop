@@ -7,13 +7,13 @@ format: html
 ```
 ::: {#fig-bostons layout-nrow=2}
 
-![Excited](images/boston-terrier.png){#fig-boston width="250px"}
+![Excited](boston-terrier.png){#fig-boston width="250px"}
 
-![Sleeping](images/boston-sleep.png){#fig-sleep width="250px"}
+![Sleeping](boston-sleep.png){#fig-sleep width="250px"}
 
-![Still Excited](images/boston-terrier.png){#fig-boston width="250px"}
+![Still Excited](boston-terrier.png){#fig-boston width="250px"}
 
-![Still sleeping](images/boston-sleep.png){#fig-sleep width="250px"}
+![Still sleeping](boston-sleep.png){#fig-sleep width="250px"}
 
 Two states of Howard, twice
 
@@ -24,13 +24,13 @@ Two states of Howard, twice
 
 ::: {#fig-bostons layout-nrow=2}
 
-![Excited](images/boston-terrier.png){#fig-boston width="250px"}
+![Excited](boston-terrier.png){#fig-boston width="250px"}
 
-![Sleeping](images/boston-sleep.png){#fig-sleep width="250px"}
+![Sleeping](boston-sleep.png){#fig-sleep width="250px"}
 
-![Still Excited](images/boston-terrier.png){#fig-boston width="250px"}
+![Still Excited](boston-terrier.png){#fig-boston width="250px"}
 
-![Still sleeping](images/boston-sleep.png){#fig-sleep width="250px"}
+![Still sleeping](boston-sleep.png){#fig-sleep width="250px"}
 
 Two states of Howard, twice
 
@@ -40,13 +40,13 @@ Two states of Howard, twice
 
 ::: {#fig-bostons layout-nrow=2}
 
-![Excited](images/boston-terrier.png){#fig-boston width="250px"}
+![Excited](boston-terrier.png){#fig-boston width="250px"}
 
-![Sleeping](images/boston-sleep.png){#fig-sleep width="250px"}
+![Sleeping](boston-sleep.png){#fig-sleep width="250px"}
 
-![Still Excited](images/boston-terrier.png){#fig-boston width="250px"}
+![Still Excited](boston-terrier.png){#fig-boston width="250px"}
 
-![Still sleeping](images/boston-sleep.png){#fig-sleep width="250px"}
+![Still sleeping](boston-sleep.png){#fig-sleep width="250px"}
 
 Two states of Howard, twice
 
